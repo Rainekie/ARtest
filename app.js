@@ -52,8 +52,22 @@ app.vuforia.isAvailable().then(function (available) {
     }
     app.vuforia.init({
         encryptedLicenseData: `-----BEGIN PGP MESSAGE-----
-        Abx/hy3/////AAABmTBnjMJNpEnIp2fdnwyOcHgtFwNg594DNPiK0mLKDo2rgcKrSVjjvswRqcyfVk4ZMyygEECi9iMXWwBdNXwvxYP9ZrLZhM/I7fUcaS4JgRqFxb57yaNUBPwG70yMhjFnHSEyoiIHU+XmfKTnucxlsSdwTwICAKzGZsQyeypzFaTqQNQkhsDhgQFo65R1cGwT+EdEztfBBl4TRMqPXkG1hxo3uyPaOdWt+xAFki9R6RuA75pCERUsJf1kKLwY36BZnnY9wm6ukiOUe2xAaUZwHrMJdNiQD48zhSvpShh8FlU6Wt3/l5eMDi85INyWD0p/16aexqPygAHRYhqqsMccjhs3J8nnZ60JmMheSGNIM7Io
------END PGP MESSAGE-----
+        Version: OpenPGP.js v2.3.2
+        Comment: http://openpgpjs.org
+        
+        0sEFATDAN8aPRNkvTDNphvDWrW1cxAIQiycpZDsDYH5t9o7pXfHct18Q80TM
+        sB+0VoDoBws32b//LWVLD4fHsCT9OIDNaNM/l7Gp42c7WP09W1T4AggeKzDx
+        v0UuIpnK2J3AnFsFcfZeZJLhEZoDZZYKW9qX132G+xwPhSO70GAr4tUj8OiA
+        9OoCNATZlLVgJDJ5Rmr+sVSRcax21cLf/tJo+tqUNbZ+2rwnixMBiCOL9p9v
+        VB9/+upYZSB4ZvBb4q2EyGZhzTb4Xc5yoYjkpKNHJFNXt3G5nd78/wPmIJyP
+        a5R/Z8Biwu3mRSc/l/ubM6rXEPaVugqz7z+CYUv7Yq5Iv+zDFQPXf6712AtM
+        PjeX7nzYmBzsrddaORD2AohQXcn87QPbEF6Opq5Mb7ncsznQTzntAE5CVV1x
+        jeHKhdLcezkE9h3nqtx+pKIhcFPlSILattu3vOChbGvrsVvvtziM8JLoQvQr
+        ezRNFrTeAokeKOEQ4r9D9e3NKIRvp8WRdHpu65u9kaGjDzrDK45dAg9XgpZ6
+        NIbbdOIlc4ccz1BC4NySEMNFcDeTUuKsyfrzzWfnYO2YKdY5VtOVvUmfjITj
+        bRSsmSm+
+        =zhk4
+        -----END PGP MESSAGE-----
 `
     }).then(function (api) {
         api.objectTracker.createDataSet("testpic.xml").then(function (dataSet) {
