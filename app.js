@@ -34,7 +34,7 @@ userLocation.add(argonTextObject);
 try {
     var loader = new THREE.TextureLoader();
     loader.crossOrigin = "*";
-    loader.load(".png", function (tex) {
+    loader.load("test.png", function (tex) {
         var geometry = new THREE.PlaneGeometry(202.4, 101.2);
         mesh = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ map: tex }));
         argonTextObject.add(mesh);
@@ -52,10 +52,11 @@ app.vuforia.isAvailable().then(function (available) {
     }
     app.vuforia.init({
         encryptedLicenseData: `-----BEGIN PGP MESSAGE-----
+        Abx/hy3/////AAABmTBnjMJNpEnIp2fdnwyOcHgtFwNg594DNPiK0mLKDo2rgcKrSVjjvswRqcyfVk4ZMyygEECi9iMXWwBdNXwvxYP9ZrLZhM/I7fUcaS4JgRqFxb57yaNUBPwG70yMhjFnHSEyoiIHU+XmfKTnucxlsSdwTwICAKzGZsQyeypzFaTqQNQkhsDhgQFo65R1cGwT+EdEztfBBl4TRMqPXkG1hxo3uyPaOdWt+xAFki9R6RuA75pCERUsJf1kKLwY36BZnnY9wm6ukiOUe2xAaUZwHrMJdNiQD48zhSvpShh8FlU6Wt3/l5eMDi85INyWD0p/16aexqPygAHRYhqqsMccjhs3J8nnZ60JmMheSGNIM7Io
 -----END PGP MESSAGE-----
 `
     }).then(function (api) {
-        api.objectTracker.createDataSet(".xml").then(function (dataSet) {
+        api.objectTracker.createDataSet("testpic.xml").then(function (dataSet) {
             dataSet.load().then(function () {
                 var trackables = dataSet.getTrackables();
                 var gvuBrochureEntity = app.context.subscribeToEntityById(trackables[""].id);
